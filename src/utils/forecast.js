@@ -2,11 +2,7 @@ const request = require('request');
 
 const forecast = (latitude, longitude, callback) => {
 	const url =
-		'https://api.darksky.net/forecast/4121e880bdb8b313a20bf950aef6f2ae/' +
-		latitude +
-		',' +
-		longitude +
-		'?units=si';
+		'https://api.darksky.net/forecast/4121e880bdb8b313a20bf950aef6f2ae/' + latitude + ',' + longitude + '?units=si';
 
 	function getTime(timeStamp, offset) {
 		let timeObj = new Date(timeStamp * 1000);
